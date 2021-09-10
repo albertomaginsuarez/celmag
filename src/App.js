@@ -1,11 +1,12 @@
 
-import Celina from './Celina'
+import BodyComponent from './components/BodyComponent'
+import NavComponent from './components/NavComponent'
 
 const App = () => {
   return (
     <div className="App">
-      HOLA ESTE ES MI PRIMER CODIGO REACT
-      <Celina></Celina>
+      <NavComponent />
+      <BodyComponent />
     </div>
   );
 }
