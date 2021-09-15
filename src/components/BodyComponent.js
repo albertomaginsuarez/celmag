@@ -2,7 +2,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
 import '../styles/BodyComponent.css'
-
+import ListaAvatar from './ListaAvatar'
 const BodyComponent = () => {
 
     /////////////////////////////////////
@@ -20,6 +20,7 @@ const BodyComponent = () => {
                     )
                 })
             }
+            <ListaAvatar />
         </div>
 
     )
