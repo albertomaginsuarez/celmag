@@ -1,0 +1,16 @@
+.body_principal{
+    background-color: #eff8ff;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary_button{
+    margin-bottom: 5px;
+}
+
+.primary_button_2{
+    margin-bottom: 20px;
+}
