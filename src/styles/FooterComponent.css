@@ -1,0 +1,21 @@
+.footer_principal{
+    background-color: #024638; 
+    min-height: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.titulo_footer {
+    display: flex;
+    color: white; 
+    line-height: 20px;
+    font-size:larger;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+

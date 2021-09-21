@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/AvatarComponent.css'
 
 const ListaAvatar = () => {
 
@@ -17,13 +18,13 @@ const ListaAvatar = () => {
         },
     ];
     return (
-        <ul>
+        <ul className='lista_avatar'>
             {
                 avatares.map((elemento, index) => {
                     return (
                         <li key={"ListaAvatar" + index}>
-                            <span>{elemento.nombre}</span>
-                            <span>{elemento.apellido}</span>
+                            <span>{elemento.nombre}</span>&nbsp;
+                            <span>{elemento.apellido}</span>&nbsp;
                             <span>{elemento.dni}</span>
                         </li>
                     )
