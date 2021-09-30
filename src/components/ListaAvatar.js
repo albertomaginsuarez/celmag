@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/AvatarComponent.css'
 
 const ListaAvatar = () => {
-
+const [celi, setCeli] = useState (true)
+const celinaMoya = () => {
+    setCeli (!celi)
+}
     const avatares = [
         {
             "nombre": "Magin",
@@ -18,6 +21,7 @@ const ListaAvatar = () => {
         },
     ];
     return (
+        
         <ul className='lista_avatar'>
             {
                 avatares.map((elemento, index) => {
@@ -29,8 +33,14 @@ const ListaAvatar = () => {
                         </li>
                     )
                 })
-            }
+            
         </ul>
+        }
+        <button
+        variant = 'success'
+        onClick={()=> celinaMoya ()}>
+        {celi ? 'celi' : 'celina'}
+        </button>
     )
 }
 
