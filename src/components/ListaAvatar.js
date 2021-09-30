@@ -21,26 +21,26 @@ const celinaMoya = () => {
         },
     ];
     return (
-        
-        <ul className='lista_avatar'>
-            {
-                avatares.map((elemento, index) => {
-                    return (
-                        <li key={"ListaAvatar" + index}>
-                            <span>{elemento.nombre}</span>&nbsp;
-                            <span>{elemento.apellido}</span>&nbsp;
-                            <span>{elemento.dni}</span>
-                        </li>
-                    )
-                })
-            
-        </ul>
-        }
-        <button
-        variant = 'success'
-        onClick={()=> celinaMoya ()}>
-        {celi ? 'celi' : 'celina'}
-        </button>
+        <>
+            <ul className='lista_avatar'>
+                {
+                    avatares.map((elemento, index) => {
+                        return (
+                            <li key={"ListaAvatar" + index}>
+                                <span>{elemento.nombre}</span>&nbsp;
+                                <span>{elemento.apellido}</span>&nbsp;
+                                <span>{elemento.dni}</span>
+                            </li>
+                        )
+                    })
+                }
+            </ul>        
+            <button
+            variant = 'success'
+            onClick={()=> celinaMoya ()}>
+            {celi ? 'celi' : 'celina'}
+            </button>
+        </>
     )
 }
 

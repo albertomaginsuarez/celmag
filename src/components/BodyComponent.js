@@ -1,7 +1,6 @@
 
 import React, {  useState  } from 'react'
 import { Button } from 'react-bootstrap';
-import '../styles/BodyComponent.css'
 import ListaAvatar from './ListaAvatar'
 
 const BodyComponent = () => {
@@ -17,7 +16,7 @@ const BodyComponent = () => {
 
     /////////////////////////////////////
     return (
-        <div className="body_principal">
+        <>
             {   mostrar &&
                 <>
                     <Button variant="success" className="primary_button">Primary</Button>
@@ -38,8 +37,7 @@ const BodyComponent = () => {
                 className="primary_button"
                 onClick={() => quieroMostrarLosBotones() }
             >{ mostrar ? 'Ocultar' : 'Mostrar' }</Button>
-        </div>
-
+        </>
     )
 }
 
