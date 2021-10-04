@@ -4,6 +4,7 @@ import HomeComponent from './components/HomeComponent'
 import CeliComponent from './components/CeliComponent'
 import FooterComponent from './components/FooterComponent'
 import NavComponent from './components/NavComponent'
+import MaginComponent from './components/MaginComponent'
 import './styles/BodyComponent.css'
 import {
   BrowserRouter as Router,
@@ -26,9 +27,13 @@ const App = () => {
               <Route path="/celi">
                 <CeliComponent />
               </Route>            
-              <Route path="/">
+               <Route path='/magin'>
+                <MaginComponent />
+              </Route> 
+               <Route path="/">
                 <HomeComponent />
-              </Route>                      
+              </Route>    
+                             
           </Switch>
         </div>
 

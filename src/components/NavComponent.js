@@ -15,6 +15,10 @@ const NavComponent = () => {
             <Nav.Item>                
                 <Nav.Link href="/celi">Celi</Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/magin">Magin</Nav.Link>
+            </Nav.Item>
+
         </Nav>
     );
 }
