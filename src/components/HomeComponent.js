@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react'
+import '../styles/LoginComponent.css'
+
 const HomeComponent = () => {        
 
     const [ email, setEmail ] = useState('albertomaginsuarez@gmail.com');
@@ -21,13 +23,13 @@ const HomeComponent = () => {
     }    
 
     return (        
-        <div>            
-            <input type="text" value={email} onChange={(event) => cambiarEmail(event)}/>
-            <input type="password" value={password} onChange={(event) => cambiarPassword(event)}/>
-            <button type="button" onClick={ () => validarMyEmailAndPassword() }>Iniciar sesión</button>
-            <a href="/resetPassword">¿Olvidaste tu contraseña?</a>
+        <div className='login_principal'>            
+            <input className='mail_principal' type="text" value={email} onChange={(event) => cambiarEmail(event)}/>&nbsp;
+            <input className='password_principal' type="password" value={password} onChange={(event) => cambiarPassword(event)}/>&nbsp;
+            <button className='iniciar_sesion_principal' type="button" onClick={ () => validarMyEmailAndPassword() }>Iniciar sesión</button>&nbsp;
+            <a className= 'olvidaste_contraseña' href="/resetPassword">¿Olvidaste tu contraseña?</a>
             <hr/>
-            <button>Crear cuenta nueva</button>
+            <button className='crear_cuenta_principal'>Crear cuenta nueva</button>
         </div>
     )
 }

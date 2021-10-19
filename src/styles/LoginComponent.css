@@ -1,0 +1,80 @@
+.login_principal {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6d2d438;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px #61676bbb;
+    width: 250px;
+    height: 300px;
+    
+}
+
+
+.mail_principal {
+
+    background-color: rgb(241, 241, 241);
+    border-style: groove;
+    border-radius: 4px;
+    border-color: rgb(243, 243, 243);
+    color: darkgray;
+    width: 225px;
+    height: 40px;
+    margin: -15px;
+
+}
+
+
+.password_principal {
+
+    background-color:rgb(241, 241, 241);
+    border-style: groove;
+    border-radius: 4px;
+    border-color: rgb(243, 243, 243);
+    width: 225px;
+    height: 40px;
+
+}
+
+
+.iniciar_sesion_principal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04705a;
+    border-radius: 4px;
+    border-color: rgba(194, 194, 194, 0.425);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    height: 35px;
+    width: 190px;
+
+}
+
+
+.olvidaste_contraseña {
+    font-size: 15px;
+    
+}
+
+
+.crear_cuenta_principal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 184, 71);
+    border-radius: 4px;
+    border-color: rgba(194, 194, 194, 0.425);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 550;
+    height: 175px;
+    height: 35px;
+    
+}
+

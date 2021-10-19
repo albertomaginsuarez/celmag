@@ -38,7 +38,7 @@ const App = () => {
         </div>
 
         <FooterComponent/>
-      </div>
+      </div> 
     </Router>    
   );
 }
