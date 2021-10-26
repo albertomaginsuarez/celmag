@@ -7,6 +7,7 @@ import NavComponent from './components/NavComponent'
 import MaginComponent from './components/MaginComponent'
 import HolaComponent from './components/HolaComponent'
 import './styles/BodyComponent.css'
+import './styles/global.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +17,7 @@ import {
 const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="wrapper">
 
         <NavComponent />                   
         
