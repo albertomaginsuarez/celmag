@@ -4,6 +4,7 @@ import HomeComponent from './components/HomeComponent'
 import CeliComponent from './components/CeliComponent'
 import FooterComponent from './components/FooterComponent'
 import NavComponent from './components/NavComponent'
+import GrillaComponent from './components/GrillaComponent'
 import MaginComponent from './components/MaginComponent'
 import './styles/BodyComponent.css'
 import './styles/global.css'
@@ -17,9 +18,7 @@ const App = () => {
   return (
     <Router>
       <div className="wrapper">
-
-        <NavComponent />                   
-        
+        <NavComponent />                           
         <div className="body_principal">
           <Switch>
               <Route path="/clases">
@@ -28,16 +27,17 @@ const App = () => {
               <Route path="/celi">
                 <CeliComponent />
               </Route>            
-               <Route path='/magin'>
+              <Route path='/magin'>
                 <MaginComponent />
+              </Route>
+              <Route path='/portfolio'>
+                <GrillaComponent />
               </Route> 
-               <Route path="/">
+              <Route path="/">
                 <HomeComponent />
-              </Route>    
-                             
+              </Route>                                 
           </Switch>
         </div>
-
         <FooterComponent/>
       </div> 
     </Router>    

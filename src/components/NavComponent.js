@@ -18,7 +18,9 @@ const NavComponent = () => {
             <Nav.Item>
                 <Nav.Link href="/magin">Magin</Nav.Link>
             </Nav.Item>
-
+            <Nav.Item>
+                <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+            </Nav.Item>
         </Nav>
     );
 }
