@@ -19,9 +19,8 @@ const NavComponent = () => {
                 <Nav.Link href="/magin">Magin</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/hola">Hola</Nav.Link>
+                <Nav.Link href="/portfolio">Portfolio</Nav.Link>
             </Nav.Item>
-
         </Nav>
     );
 }
