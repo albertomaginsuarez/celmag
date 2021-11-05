@@ -63,33 +63,35 @@ const GrillaComponent = () => {
     }
 
   
-   const reiniciarTodasLasFotos = () =>{
+    const reiniciarTodasLasFotos = () =>{
        setFotosServidor([]);
     }
+
     const descargarDelServidor = () => {
         setContador(contador+1);
     }
 
-    useEffect(() => {
+    //useE1
+    useEffect(() => {        
         setFotosServidor(fotos);
-    }, [])
+    }, []);
 
-    useEffect(() => {   
+    //useE2
+    useEffect(() => {        
         if(contador > 0 && contador <= fotosDelServidor.length) {
+            console.log(3)
             let fotoExtra = fotosDelServidor[contador-1];
             setFotosServidor([...fotosServidor, fotoExtra]);            
         }
-    } , [contador]) 
+    } , [contador]);
     
-    const borrarUltimaFoto = () => {
-        
-         }
+    const borrarUltimaFoto = () => {                    
+        const tempFotos = fotosServidor;
+        tempFotos.pop();
+        setFotosServidor([...tempFotos]);
+                
+    }    
     
-     
-
-
- 
-
     return (
         <>
             <div className="container">            
@@ -104,14 +106,14 @@ const GrillaComponent = () => {
                 } 
                                   
               </div>
-              <button onClick={()=> borrarUltimaFoto()}>Borrar Ultima Foto</button>
-              <button onClick={()=> reiniciarTodasLasFotos()}>Reiniciar todas las fotos</button>
+              <button className="btn btn-primary" onClick={()=> borrarUltimaFoto()}>Borrar Ultima Foto</button>
+              <button className="btn btn-primary" onClick={()=> reiniciarTodasLasFotos()}>Reiniciar todas las fotos</button>
               <button className="btn btn-primary" onClick={()=> agregarUnaFotoMas()}>Agregar una foto más</button>
               <hr/>            
               <button className="btn btn-primary" onClick={()=> descargarDelServidor()}>Descargar foto del servidor</button>            
     
         </>
-            )
+    )
 
 }
 export default GrillaComponent

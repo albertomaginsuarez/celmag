@@ -7,6 +7,7 @@ import NavComponent from './components/NavComponent'
 import GrillaComponent from './components/GrillaComponent'
 import MaginComponent from './components/MaginComponent'
 import HolaComponent from './components/HolaComponent'
+import HermanosComponent from './components/HermanosComponent'
 import './styles/BodyComponent.css'
 import './styles/global.css'
 import {
@@ -33,6 +34,9 @@ const App = () => {
               </Route>
               <Route path='/portfolio'>
                 <GrillaComponent />
+              </Route>
+              <Route path='/hermanos'>
+                <HermanosComponent />
               </Route> 
               <Route path="/">
                 <HomeComponent />
