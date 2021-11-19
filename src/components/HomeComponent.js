@@ -10,7 +10,7 @@ const HomeComponent = () => {
 
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
-    const [ pais, setPais ] = useState('Argentina');        
+           
 
     const cambiarEmail = (event) => {                
         setEmail(event.target.value);                
@@ -35,9 +35,7 @@ const HomeComponent = () => {
             <button className='iniciar_sesion_principal' type="button" onClick={ () => validarMyEmailAndPassword() }>Iniciar sesión</button>&nbsp;
             <a className= 'olvidaste_contraseña' href="/resetPassword">¿Olvidaste tu contraseña?</a>
             <hr/>
-            {pais}            
-            <button onClick={() => setPais('Brasil')}>Voy a viajar</button>
-            {}
+            
             <button className='crear_cuenta_principal'>Crear cuenta nueva</button>            
         </div>
     )

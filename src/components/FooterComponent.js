@@ -4,13 +4,10 @@ import '../styles/FooterComponent.css'
 
 const FooterComponent = () => {
 
-    const [celi, setCeli] = useState (true)
-    const soyCelinaMoyano = () => {
-        setCeli (!celi);
-    }
+    
     return (
         <div className='footer_principal'>
-            {celi && 
+            {
             <footer>
         
                     <h4 className='titulo_footer'>
@@ -24,11 +21,7 @@ const FooterComponent = () => {
             
             </footer>
 }
-   <button
-   variant='success'
-    onClick={()=> soyCelinaMoyano()}
-    > {celi ? 'chau' : 'hola'}
-   </button>
+   
        </div>
     );
 }

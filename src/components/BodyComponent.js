@@ -8,7 +8,7 @@ const BodyComponent = () => {
     const bolsa = [1, 2];
     
     //Memorizar
-    const [mostrar, setMostrar] = useState(true);    
+    const [mostrar, setMostrar] = useState(false);    
 
     const quieroMostrarLosBotones = () => {        
         setMostrar(!mostrar);        
@@ -19,16 +19,7 @@ const BodyComponent = () => {
         <>
             {   mostrar &&
                 <>
-                    <Button variant="success" className="primary_button">Primary</Button>
-                    {
-                        bolsa.map((lluvia) => {
-                            return (
-                                <Button variant="success" className="primary_button_2">
-                                    BOTON DE PRUEBA {lluvia}
-                                </Button>
-                            )
-                        })
-                    }
+                    
                     <ListaAvatar />
                 </>                    
             }
